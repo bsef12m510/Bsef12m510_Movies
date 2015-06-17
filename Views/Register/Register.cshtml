@@ -69,7 +69,7 @@
                                             $.getJSON("/Register/CheckUserName?UserName=" + userName, function (data) {
                                                 $('#checking').hide();
                                                 if (data) {
-                                                    $('#result').text("Username already exists!!");
+                                                    $('#result').text("This username is not available !!");
                                                     $('#save').attr('disabled', true);
                                                 }
                                                 else {
